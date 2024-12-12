@@ -9,7 +9,7 @@
     body {
       font-family: Arial;
       padding: 10px;
-      background: #525252;
+      background: #a75c5c;
     }
 
     .header {
@@ -23,8 +23,8 @@
     }
 
     .header-content {
-      background: rgba(0, 0, 0, 0.6); 
-      color: white;
+      background: rgba(88, 9, 9, 0.6); 
+      color: rgb(253, 253, 253);
       padding: 20px;
       position: absolute;
       top: 50%;
@@ -39,13 +39,13 @@
 
     .topnav {
       overflow: hidden;
-      background-color: #3b3b3b;
+      background-color: #a75c5c;
     }
 
     .topnav a {
       float: left;
       display: block;
-      color: #f2f2f2;
+      color: #f7f7f7;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
@@ -53,7 +53,7 @@
 
     .topnav a:hover {
       background-color: #ddd;
-      color: black;
+      color: rgb(255, 255, 255);
     }
 
     .row {
@@ -72,11 +72,11 @@
 
     .rightcolumn {
       flex: 1;
-      background-color: #525252;
+      background-color: #a75c5c;
     }
 
     .card {
-      background-color: rgb(255, 251, 24);
+      background-color: rgb(124, 23, 23);
       padding: 20px;
       margin-top: 20px;
       border-radius: 5px;
@@ -116,7 +116,7 @@
       position: absolute;
       top: 20px;
       right: 35px;
-      color: white;
+      color: rgb(102, 40, 40);
       font-size: 40px;
       font-weight: bold;
       transition: 0.3s;
@@ -124,13 +124,13 @@
     }
 
     .close:hover, .close:focus {
-      color: #bbb;
+      color: #c00754;
     }
 
     .footer {
       padding: 20px;
       text-align: center;
-      background: #525252;
+      background: #881818;
       margin-top: 20px;
       color: white;
     }
@@ -144,8 +144,11 @@
         float: none;
         width: 100%;
       }
+     
     }
   </style>
+  
+ 
 </head>
 <body>
 <div class="header">
@@ -166,12 +169,20 @@
     <div class="card" id="galeria">
       <h2>Algunos de nuestros pasteles</h2>
       <div class="card">
+        <style>
+           .thumbnail {
+    width: 300px; /* Ajusta el ancho */
+    height: auto; /* Mantiene la proporción */
+    cursor: pointer;
+    border-radius: 5px;
+  }
+        </style>
         <h2>Vainilla</h2>
-        <img src="img/vanilla clasica.jpg" alt="Pastel de Vainilla" class="thumbnail" onclick="showModal('img/vanilla clasica.jpg')">
+        <img src="img/Vainilla clasica.jpg" alt="Pastel de Vainilla" class="thumbnail" onclick="showModal('img/Vainilla clasica.jpg ')">
       </div>
       <div class="card">
         <h2>Red Velvet</h2>
-        <img src="img/red velvet.jpg" alt="Pastel Red Velvet" class="thumbnail" onclick="showModal('img/red velvet.jpg')">
+        <img src="img/Red Velvet.jpg" alt="Pastel Red Velvet" class="thumbnail" onclick="showModal('img/Red Velvet.jpg')">
       </div>
     </div>
   </div>
@@ -255,3 +266,4 @@
 </div>
 </body>
 </html>
+
